@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/mNovoJogo"
+        android:icon="@drawable/ic_action_gamepad"
+        android:title="Novo Jogo"
+    />
+
+    <item
+        android:id="@+id/mAddJogador"
+        android:icon="@drawable/ic_action_add_person"
+        android:title="Adicionar Jogador"
+        />
+
+    <item
+        android:id="@+id/mExcJogador"
+        android:icon="@drawable/ic_action_discard"
+        android:title="Excluir Jogador"
+        />
+
+    <item
+        android:id="@+id/mLimpar"
+        android:icon="@drawable/ic_action_rotate_left"
+        android:title="Resetar Jogadores"
+    />
+
+</menu>

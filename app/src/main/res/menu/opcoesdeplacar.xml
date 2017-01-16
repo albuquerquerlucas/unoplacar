@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mNovoJogo"
+        android:title="Novo Jogo"
+        android:icon="@drawable/ic_action_gamepad"
+        />
+
+    <item
+        android:id="@+id/mAddJogador"
+        android:title="Adicionar Jogador"
+        android:icon="@drawable/ic_action_add_person"
+        />
+
+    <item
+        android:id="@+id/mZerarPlacar"
+        android:title="Zerar Placar"
+        android:icon="@drawable/ic_action_rotate_left"
+        />
+
+    <item
+        android:id="@+id/mDeletarBanco"
+        android:title="Encerrar Jogo"
+        android:icon="@drawable/ic_action_rotate_left"
+        />
+
+    <item
+        android:id="@+id/mSobreApp"
+        android:title="Sobre a App"
+        android:icon="@drawable/ic_action_rotate_left"
+        />
+
+</menu>

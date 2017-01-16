@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_placar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo"
+    tools:context="com.luke.unoplacar.activitys.PlacarActivity">
+
+    <TextView
+        android:id="@+id/txtTitleClassificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Classificação Geral"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/layoutJogadores01"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtTitleClassificacao"
+        android:layout_above="@+id/barraPerdedor">
+
+        <ListView
+            android:id="@+id/listaPlacar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#fff"
+            android:dividerHeight="0dp"
+            android:scrollIndicators="none">
+
+        </ListView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/barraPerdedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/imgGracinha"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/emoj"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:id="@+id/txtPerdedor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="TESTE"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

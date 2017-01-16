@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Uno Placar (Beta)</string>
+
+    <string name="obs_info">Obs: Por default, a App suporta de 2 a 8 jogadores. Ao iniciar a partida é possível adicionar mais jogadores.</string>
+</resources>

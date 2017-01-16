@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pontuar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo"
+    tools:context="com.luke.unoplacar.activitys.PontuarActivity">
+
+    <TextView
+        android:id="@+id/txtTitleClassificacao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pontuar Jogador"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_below="@+id/txtTitleClassificacao"
+        android:layout_above="@+id/layoutJogadores02">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jogador(a):"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/txtNomeJogadorParaPontuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Lucas Albuquerque"
+            android:textColor="#fff"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pontuaçao:"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtPontuacaoAtual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="+"
+                android:textColor="#fff"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/edtPontuacaoNova"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                android:background="#fff"
+                android:hint="pts."
+                android:textColor="@android:color/holo_red_dark"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutJogadores02"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/btnPontuar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pontuar"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:background="@drawable/btn_seletor" />
+
+    </LinearLayout>
+
+</RelativeLayout>

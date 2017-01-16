@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sobre"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_fundo"
+    tools:context="com.luke.unoplacar.activitys.SobreActivity">
+
+    <TextView
+        android:id="@+id/txtTitleInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Informações Sobre a App"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"/>
+
+    <RelativeLayout
+        android:id="@+id/relativo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/txtTitleInfo"
+        android:layout_above="@+id/txtInformacoes4">
+
+        <ImageView
+            android:id="@+id/imgMeLogo"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/melogo1"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txtInformacoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="App Uno Placar (Beta) - Versão 1.0"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:layout_below="@+id/imgMeLogo"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtInformacoes2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="+55 85 9 9778 - 5761"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:textSize="18sp"
+            android:layout_below="@+id/txtInformacoes"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtInformacoes3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Janeiro/2017."
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:layout_below="@+id/txtInformacoes2"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txtInformacoes4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Todos os direitos reservados."
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:layout_below="@+id/txtInformacoes3"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtInformacoes5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="15dp"
+        android:text="albuquerque.r.lucas@gmail.com"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
